@@ -5,9 +5,24 @@ jest.setTimeout(10000);
 
 
 describe('Testing login route', () => {
-  beforeAll((done) => {
-    Models.users.destroy({ truncate: true }).then(() => done());
+  beforeEach((done) => {
+    Models.users.destroy({ truncate: true }).then(() => {
+      Models.responses.destroy({ truncate: true }).then(() => {
+        Models.users.create({
+          username: 'aakash',
+          score: 0,
+        }).then(() => {
+          Models.responses.create({
+            username: 'aakash',
+            questionid: 10,
+            answer: 'bangladesh',
+          }).then(() => { done(); });
+        });
+      });
+    });
   });
+
+
   it('Checking if the route responds', (done) => {
     const options = {
       method: 'POST',
@@ -33,6 +48,21 @@ describe('Testing login route', () => {
     server.inject(options, (response) => {
       console.log('Response is: ', response.payload);
       expect(response.payload).toBe('Created new user');
+      done();
+    });
+  });
+
+  it('Login with existing user', (done) => {
+    const options = {
+      method: 'POST',
+      url: '/login',
+      payload: {
+        username: 'aakash',
+      },
+    };
+    server.inject(options, (response) => {
+      console.log('Response is: ', response.payload);
+      expect(response.payload.toString()).toContain('questionid');
       done();
     });
   });

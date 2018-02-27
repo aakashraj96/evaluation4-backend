@@ -4,10 +4,8 @@ module.exports = {
   path: '/login',
   method: 'POST',
   handler: (request, reply) => {
-    const replyPromise = loginHandler(request.username);
-    console.log('Promise is: ', replyPromise);
+    const replyPromise = loginHandler(request.payload.username);
     replyPromise.then((data) => {
-      console.log('Data is: ', data);
       reply(data);
     });
   },
