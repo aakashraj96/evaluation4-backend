@@ -6,7 +6,7 @@ module.exports = () => {
     Models.questionBank.findAll().then((questionsData) => {
       if (questionsData.length === 0) {
         const promiseArray = [];
-        console.log('inside questionbank!!', questionsData);
+        // console.log('inside questionbank!!', questionsData);
         fetch('https://5gj1qvkc5h.execute-api.us-east-1.amazonaws.com/dev/allQuestions').then(data => data.json()).then((jsonData) => {
           jsonData.allQuestions.forEach((question, i) => {
             promiseArray[i] = new Promise((resolve, reject) => {

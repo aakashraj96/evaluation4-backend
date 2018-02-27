@@ -76,7 +76,7 @@ describe('Testing login route', () => {
       },
     };
     server.inject(options, (response) => {
-      console.log('Response is: ', response.payload);
+      // console.log('Response is: ', response.payload);
       expect(response.payload.toString()).toContain('score');
       done();
     });

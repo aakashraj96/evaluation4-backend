@@ -20,28 +20,28 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">34.78% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>24/24</span>
+        <span class='fraction'>8/23</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">25% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>4/4</span>
+        <span class='fraction'>1/4</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">25% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>12/12</span>
+        <span class='fraction'>3/12</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">38.1% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>22/22</span>
+        <span class='fraction'>8/21</span>
       </div>
     </div>
   </div>
-  <div class='status-line high'></div>
+  <div class='status-line low'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -91,35 +91,35 @@
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">72x</span>
-<span class="cline-any cline-yes">48x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -131,32 +131,32 @@ const Models = require('../../models');
 module.exports = () =&gt; {
   const promise = new Promise((resolve) =&gt; {
     Models.questionBank.findAll().then((questionsData) =&gt; {
-      if (questionsData.length === 0) {
-        const promiseArray = [];
-        console.log('inside questionbank!!', questionsData);
-        fetch('https://5gj1qvkc5h.execute-api.us-east-1.amazonaws.com/dev/allQuestions').then(data =&gt; data.json()).then((jsonData) =&gt; {
-          jsonData.allQuestions.forEach((question, i) =&gt; {
-            promiseArray[i] = new Promise((resolve, reject) =&gt; {
-              fetch(`https://5gj1qvkc5h.execute-api.us-east-1.amazonaws.com/dev/findAnswerById/${question.questionId}`).then(resp =&gt; resp.json()).then((jsonResp) =&gt; {
-                const optionsObject = {};
-                Object.keys(question).forEach((key) =&gt; {
-                  if (key.indexOf('option') &gt;= 0) {
-                    optionsObject[key] = question[key];
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (questionsData.length === 0) {
+        const promiseArray = <span class="cstat-no" title="statement not covered" >[];</span>
+        // console.log('inside questionbank!!', questionsData);
+<span class="cstat-no" title="statement not covered" >        fetch('https://5gj1qvkc5h.execute-api.us-east-1.amazonaws.com/dev/allQuestions').then(<span class="fstat-no" title="function not covered" >da</span>ta =&gt; <span class="cstat-no" title="statement not covered" >data.json())</span>.then(<span class="fstat-no" title="function not covered" >(j</span>sonData) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >          jsonData.allQuestions.forEach(<span class="fstat-no" title="function not covered" >(q</span>uestion, i) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >            promiseArray[i] = new Promise(<span class="fstat-no" title="function not covered" >(r</span>esolve, reject) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >              fetch(`https://5gj1qvkc5h.execute-api.us-east-1.amazonaws.com/dev/findAnswerById/${question.questionId}`).then(<span class="fstat-no" title="function not covered" >re</span>sp =&gt; <span class="cstat-no" title="statement not covered" >resp.json())</span>.then(<span class="fstat-no" title="function not covered" >(j</span>sonResp) =&gt; {</span>
+                const optionsObject = <span class="cstat-no" title="statement not covered" >{};</span>
+<span class="cstat-no" title="statement not covered" >                Object.keys(question).forEach(<span class="fstat-no" title="function not covered" >(k</span>ey) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >                  if (key.indexOf('option') &gt;= 0) {</span>
+<span class="cstat-no" title="statement not covered" >                    optionsObject[key] = question[key];</span>
                   }
                 });
-                Models.questionBank.create({
+<span class="cstat-no" title="statement not covered" >                Models.questionBank.create({</span>
                   questionid: question.questionId,
                   question: question.question,
                   options: JSON.stringify(optionsObject),
                   answer: jsonResp.answer,
-                }).then((createdRow) =&gt; {
-                  resolve(createdRow);
+                }).then(<span class="fstat-no" title="function not covered" >(c</span>reatedRow) =&gt; {
+<span class="cstat-no" title="statement not covered" >                  resolve(createdRow);</span>
                 });
               });
             });
           });
-          Promise.all(promiseArray).then((arrayData) =&gt; {
-            resolve(arrayData);
+<span class="cstat-no" title="statement not covered" >          Promise.all(promiseArray).then(<span class="fstat-no" title="function not covered" >(a</span>rrayData) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >            resolve(arrayData);</span>
           });
         });
       } else {
@@ -172,7 +172,7 @@ module.exports = () =&gt; {
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Feb 28 2018 04:48:24 GMT+0530 (IST)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Feb 28 2018 04:56:11 GMT+0530 (IST)
 </div>
 </div>
 <script src="../../prettify.js"></script>

@@ -10,7 +10,7 @@ module.exports = (uname) => {
       },
     }).then((data) => {
       data.forEach((quesResp) => {
-        console.log('Question id is: ', quesResp.dataValues.questionid);
+        // console.log('Question id is: ', quesResp.dataValues.questionid);
         Models.questionBank.findOne({
           where: {
             questionid: quesResp.dataValues.questionid,
