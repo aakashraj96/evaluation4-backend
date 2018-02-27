@@ -1,7 +1,7 @@
 const Models = require('../../models');
 
 module.exports = (uname) => {
-  let score = 0;
+  let lscore = 0;
   const promise = new Promise((resolve) => {
     let count = 0;
     Models.responses.findAll({
@@ -17,11 +17,22 @@ module.exports = (uname) => {
           },
         }).then((ques) => {
           if (ques.dataValues.answer === quesResp.dataValues.answer) {
-            score += 1;
+            lscore += 1;
           }
           count += 1;
           if (count === data.length) {
-            resolve(score);
+            Models.users.update(
+              {
+                score: lscore,
+              },
+              {
+                where: {
+                  username: uname,
+                },
+              },
+            ).then(() => {
+              resolve(lscore);
+            });
           }
         });
       });
