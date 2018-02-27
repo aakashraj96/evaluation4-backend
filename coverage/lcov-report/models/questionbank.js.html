@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for models/users.js</title>
+    <title>Code coverage report for models/questionbank.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -16,7 +16,7 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="../index.html">All files</a> / <a href="index.html">models</a> users.js
+      <a href="../index.html">All files</a> / <a href="index.html">models</a> questionbank.js
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
@@ -53,9 +53,13 @@
 8
 9
 10
-11</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+11
+12
+13</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -65,14 +69,16 @@
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
 module.exports = (sequelize, DataTypes) =&gt; {
-  var users = sequelize.define('users', {
-    username: DataTypes.STRING,
-    score: DataTypes.INTEGER
+  var questionBank = sequelize.define('questionBank', {
+    questionid: DataTypes.INTEGER,
+    question: DataTypes.STRING,
+    options: DataTypes.STRING,
+    answer: DataTypes.STRING
   }, {});
-  users.associate = function(models) {
+  questionBank.associate = function(models) {
     // associations can be defined here
   };
-  return users;
+  return questionBank;
 };</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->

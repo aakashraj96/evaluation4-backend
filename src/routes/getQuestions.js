@@ -5,6 +5,8 @@ module.exports = {
   method: 'GET',
   handler: (request, reply) => {
     const replyPromise = getQuestionsHandler();
-    reply('hello');
+    replyPromise.then((data) => {
+      reply(data);
+    });
   },
 };
