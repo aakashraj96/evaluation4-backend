@@ -4,7 +4,9 @@ module.exports = {
   path: '/calculateScore',
   method: 'POST',
   handler: (request, reply) => {
-    const replyPromise = calculateScoreHandler();
-    reply('Sucess');
+    const replyPromise = calculateScoreHandler(request.payload.username);
+    replyPromise.then((data) => {
+      reply(data);
+    });
   },
 };
