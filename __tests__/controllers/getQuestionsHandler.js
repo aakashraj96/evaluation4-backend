@@ -1,5 +1,4 @@
 const getQuestionsHandler = require('../../src/controllers/getQuestionsHandler');
-const Models = require('../../models');
 
 
 jest.setTimeout(10000);
