@@ -20,4 +20,20 @@ describe('Testing saveQuestionReponse route', () => {
       done();
     });
   });
+
+  it('Checking if the route responds with saved message', (done) => {
+    const options = {
+      method: 'POST',
+      url: '/saveQuestionReponse',
+      payload: {
+        username: 'abcd1234',
+        questionid: 10,
+        answer: 'bangladesh',
+      },
+    };
+    server.inject(options, (response) => {
+      expect(response.payload).toBe('Answer saved');
+      done();
+    });
+  });
 });
