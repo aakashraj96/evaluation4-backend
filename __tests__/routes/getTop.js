@@ -56,4 +56,15 @@ describe('Testing getTop route', () => {
       done();
     });
   });
+  it('Checking if highest score is on the top', (done) => {
+    const options = {
+      method: 'GET',
+      url: '/getTop',
+    };
+    server.inject(options, (response) => {
+      console.log(JSON.parse(response.payload));
+      expect(JSON.parse(response.payload)[0].score).toBe(17);
+      done();
+    });
+  });
 });

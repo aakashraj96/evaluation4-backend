@@ -20,28 +20,28 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">12.5% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>2/16</span>
+        <span class='fraction'>16/16</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/4</span>
+        <span class='fraction'>4/4</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/6</span>
+        <span class='fraction'>6/6</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">12.5% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>2/16</span>
+        <span class='fraction'>16/16</span>
       </div>
     </div>
   </div>
-  <div class='status-line low'></div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -85,32 +85,30 @@
 40
 41
 42
-43</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+43</td><td class="line-coverage quiet"><span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -118,39 +116,41 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const Models = require('../../models');
 &nbsp;
-module.exports = <span class="fstat-no" title="function not covered" >(u</span>name) =&gt; {
-  let lscore = <span class="cstat-no" title="statement not covered" >0;</span>
-  const promise = <span class="cstat-no" title="statement not covered" >new Promise(<span class="fstat-no" title="function not covered" >(r</span>esolve) =&gt; {</span>
-    let count = <span class="cstat-no" title="statement not covered" >0;</span>
-<span class="cstat-no" title="statement not covered" >    Models.responses.findAll({</span>
+module.exports = (uname) =&gt; {
+  let lscore = 0;
+  const promise = new Promise((resolve) =&gt; {
+    let count = 0;
+    Models.responses.findAll({
       where: {
         username: uname,
       },
-    }).then(<span class="fstat-no" title="function not covered" >(d</span>ata) =&gt; {
-<span class="cstat-no" title="statement not covered" >      data.forEach(<span class="fstat-no" title="function not covered" >(q</span>uesResp) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >        console.log('Question id is: ', quesResp.dataValues.questionid);</span>
-<span class="cstat-no" title="statement not covered" >        Models.questionBank.findOne({</span>
+    }).then((data) =&gt; {
+      data.forEach((quesResp) =&gt; {
+        console.log('Question id is: ', quesResp.dataValues.questionid);
+        Models.questionBank.findOne({
           where: {
             questionid: quesResp.dataValues.questionid,
           },
-        }).then(<span class="fstat-no" title="function not covered" >(q</span>ues) =&gt; {
-<span class="cstat-no" title="statement not covered" >          if (ques.dataValues.answer === quesResp.dataValues.answer) {</span>
-<span class="cstat-no" title="statement not covered" >            lscore += 1;</span>
+        }).then((ques) =&gt; {
+          if (ques.dataValues.answer === quesResp.dataValues.answer) {
+            lscore += 1;
           }
-<span class="cstat-no" title="statement not covered" >          count += 1;</span>
-<span class="cstat-no" title="statement not covered" >          if (count === data.length) {</span>
-<span class="cstat-no" title="statement not covered" >            Models.users.update(</span>
+          count += 1;
+          if (count === data.length) {
+            Models.users.update(
               {
                 score: lscore,
               },
@@ -159,15 +159,15 @@ module.exports = <span class="fstat-no" title="function not covered" >(u</span>n
                   username: uname,
                 },
               },
-            ).then(<span class="fstat-no" title="function not covered" >()</span> =&gt; {
-<span class="cstat-no" title="statement not covered" >              resolve(lscore);</span>
+            ).then(() =&gt; {
+              resolve(lscore);
             });
           }
         });
       });
     });
   });
-<span class="cstat-no" title="statement not covered" >  return promise;</span>
+  return promise;
 };
 &nbsp;</pre></td></tr>
 </table></pre>
@@ -175,7 +175,7 @@ module.exports = <span class="fstat-no" title="function not covered" >(u</span>n
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Feb 28 2018 04:46:56 GMT+0530 (IST)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Feb 28 2018 04:48:24 GMT+0530 (IST)
 </div>
 </div>
 <script src="../../prettify.js"></script>

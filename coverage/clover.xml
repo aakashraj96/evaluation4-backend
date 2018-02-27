@@ -1,199 +1,199 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1519773417042" clover="3.2.0">
-  <project timestamp="1519773417043" name="All files">
-    <metrics statements="134" coveredstatements="75" conditionals="19" coveredconditionals="6" methods="50" coveredmethods="15" elements="203" coveredelements="96" complexity="0" loc="134" ncloc="134" packages="4" files="16" classes="16">
+<coverage generated="1519773504967" clover="3.2.0">
+  <project timestamp="1519773504967" name="All files">
+    <metrics statements="134" coveredstatements="133" conditionals="19" coveredconditionals="16" methods="50" coveredmethods="50" elements="203" coveredelements="199" complexity="0" loc="134" ncloc="134" packages="4" files="16" classes="16">
       <package name="models">
         <metrics statements="32" coveredstatements="31" conditionals="9" coveredconditionals="6" methods="9" coveredmethods="9"/>
         <file name="index.js" path="/Users/aakashraju/MDL/Evaluations/evaluation4/backend/models/index.js">
           <metrics statements="20" coveredstatements="19" conditionals="9" coveredconditionals="6" methods="3" coveredmethods="3"/>
-          <line num="3" count="1" type="stmt"/>
-          <line num="4" count="1" type="stmt"/>
-          <line num="5" count="1" type="stmt"/>
-          <line num="6" count="1" type="stmt"/>
-          <line num="7" count="1" type="cond" truecount="1" falsecount="1"/>
-          <line num="8" count="1" type="stmt"/>
-          <line num="9" count="1" type="stmt"/>
-          <line num="11" count="1" type="cond" truecount="1" falsecount="1"/>
+          <line num="3" count="7" type="stmt"/>
+          <line num="4" count="7" type="stmt"/>
+          <line num="5" count="7" type="stmt"/>
+          <line num="6" count="7" type="stmt"/>
+          <line num="7" count="7" type="cond" truecount="1" falsecount="1"/>
+          <line num="8" count="7" type="stmt"/>
+          <line num="9" count="7" type="stmt"/>
+          <line num="11" count="7" type="cond" truecount="1" falsecount="1"/>
           <line num="12" count="0" type="stmt"/>
-          <line num="14" count="1" type="stmt"/>
-          <line num="17" count="1" type="stmt"/>
-          <line num="20" count="4" type="cond" truecount="3" falsecount="0"/>
-          <line num="23" count="3" type="stmt"/>
-          <line num="24" count="3" type="stmt"/>
-          <line num="27" count="1" type="stmt"/>
-          <line num="28" count="3" type="cond" truecount="1" falsecount="1"/>
-          <line num="29" count="3" type="stmt"/>
-          <line num="33" count="1" type="stmt"/>
-          <line num="34" count="1" type="stmt"/>
-          <line num="36" count="1" type="stmt"/>
+          <line num="14" count="7" type="stmt"/>
+          <line num="17" count="7" type="stmt"/>
+          <line num="20" count="28" type="cond" truecount="3" falsecount="0"/>
+          <line num="23" count="21" type="stmt"/>
+          <line num="24" count="21" type="stmt"/>
+          <line num="27" count="7" type="stmt"/>
+          <line num="28" count="21" type="cond" truecount="1" falsecount="1"/>
+          <line num="29" count="21" type="stmt"/>
+          <line num="33" count="7" type="stmt"/>
+          <line num="34" count="7" type="stmt"/>
+          <line num="36" count="7" type="stmt"/>
         </file>
         <file name="questionbank.js" path="/Users/aakashraju/MDL/Evaluations/evaluation4/backend/models/questionbank.js">
           <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-          <line num="2" count="1" type="stmt"/>
-          <line num="3" count="1" type="stmt"/>
-          <line num="9" count="1" type="stmt"/>
-          <line num="12" count="1" type="stmt"/>
+          <line num="2" count="7" type="stmt"/>
+          <line num="3" count="7" type="stmt"/>
+          <line num="9" count="7" type="stmt"/>
+          <line num="12" count="7" type="stmt"/>
         </file>
         <file name="responses.js" path="/Users/aakashraju/MDL/Evaluations/evaluation4/backend/models/responses.js">
           <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-          <line num="2" count="1" type="stmt"/>
-          <line num="3" count="1" type="stmt"/>
-          <line num="8" count="1" type="stmt"/>
-          <line num="11" count="1" type="stmt"/>
+          <line num="2" count="7" type="stmt"/>
+          <line num="3" count="7" type="stmt"/>
+          <line num="8" count="7" type="stmt"/>
+          <line num="11" count="7" type="stmt"/>
         </file>
         <file name="users.js" path="/Users/aakashraju/MDL/Evaluations/evaluation4/backend/models/users.js">
           <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-          <line num="2" count="1" type="stmt"/>
-          <line num="3" count="1" type="stmt"/>
-          <line num="7" count="1" type="stmt"/>
-          <line num="10" count="1" type="stmt"/>
+          <line num="2" count="7" type="stmt"/>
+          <line num="3" count="7" type="stmt"/>
+          <line num="7" count="7" type="stmt"/>
+          <line num="10" count="7" type="stmt"/>
         </file>
       </package>
       <package name="src">
         <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <file name="server.js" path="/Users/aakashraju/MDL/Evaluations/evaluation4/backend/src/server.js">
           <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-          <line num="1" count="1" type="stmt"/>
-          <line num="2" count="1" type="stmt"/>
-          <line num="4" count="1" type="stmt"/>
-          <line num="6" count="1" type="stmt"/>
-          <line num="8" count="1" type="stmt"/>
-          <line num="10" count="1" type="stmt"/>
-          <line num="11" count="1" type="stmt"/>
-          <line num="12" count="1" type="stmt"/>
-          <line num="15" count="1" type="stmt"/>
+          <line num="1" count="5" type="stmt"/>
+          <line num="2" count="5" type="stmt"/>
+          <line num="4" count="5" type="stmt"/>
+          <line num="6" count="5" type="stmt"/>
+          <line num="8" count="5" type="stmt"/>
+          <line num="10" count="5" type="stmt"/>
+          <line num="11" count="5" type="stmt"/>
+          <line num="12" count="5" type="stmt"/>
+          <line num="15" count="5" type="stmt"/>
         </file>
       </package>
       <package name="src.controllers">
-        <metrics statements="62" coveredstatements="16" conditionals="10" coveredconditionals="0" methods="30" coveredmethods="3"/>
+        <metrics statements="62" coveredstatements="62" conditionals="10" coveredconditionals="10" methods="30" coveredmethods="30"/>
         <file name="calculateScoreHandler.js" path="/Users/aakashraju/MDL/Evaluations/evaluation4/backend/src/controllers/calculateScoreHandler.js">
-          <metrics statements="16" coveredstatements="2" conditionals="4" coveredconditionals="0" methods="6" coveredmethods="0"/>
-          <line num="1" count="1" type="stmt"/>
-          <line num="3" count="1" type="stmt"/>
-          <line num="4" count="0" type="stmt"/>
-          <line num="5" count="0" type="stmt"/>
-          <line num="6" count="0" type="stmt"/>
-          <line num="7" count="0" type="stmt"/>
-          <line num="12" count="0" type="stmt"/>
-          <line num="13" count="0" type="stmt"/>
-          <line num="14" count="0" type="stmt"/>
-          <line num="19" count="0" type="cond" truecount="0" falsecount="2"/>
-          <line num="20" count="0" type="stmt"/>
-          <line num="22" count="0" type="stmt"/>
-          <line num="23" count="0" type="cond" truecount="0" falsecount="2"/>
-          <line num="24" count="0" type="stmt"/>
-          <line num="34" count="0" type="stmt"/>
-          <line num="41" count="0" type="stmt"/>
+          <metrics statements="16" coveredstatements="16" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
+          <line num="1" count="5" type="stmt"/>
+          <line num="3" count="5" type="stmt"/>
+          <line num="4" count="2" type="stmt"/>
+          <line num="5" count="2" type="stmt"/>
+          <line num="6" count="2" type="stmt"/>
+          <line num="7" count="2" type="stmt"/>
+          <line num="12" count="2" type="stmt"/>
+          <line num="13" count="4" type="stmt"/>
+          <line num="14" count="4" type="stmt"/>
+          <line num="19" count="4" type="cond" truecount="2" falsecount="0"/>
+          <line num="20" count="2" type="stmt"/>
+          <line num="22" count="4" type="stmt"/>
+          <line num="23" count="4" type="cond" truecount="2" falsecount="0"/>
+          <line num="24" count="2" type="stmt"/>
+          <line num="34" count="2" type="stmt"/>
+          <line num="41" count="2" type="stmt"/>
         </file>
         <file name="getQuestionsHandler.js" path="/Users/aakashraju/MDL/Evaluations/evaluation4/backend/src/controllers/getQuestionsHandler.js">
-          <metrics statements="22" coveredstatements="3" conditionals="4" coveredconditionals="0" methods="12" coveredmethods="0"/>
-          <line num="1" count="1" type="stmt"/>
-          <line num="2" count="1" type="stmt"/>
-          <line num="4" count="1" type="stmt"/>
-          <line num="5" count="0" type="stmt"/>
-          <line num="6" count="0" type="stmt"/>
-          <line num="7" count="0" type="cond" truecount="0" falsecount="2"/>
-          <line num="8" count="0" type="stmt"/>
-          <line num="9" count="0" type="stmt"/>
-          <line num="10" count="0" type="stmt"/>
-          <line num="11" count="0" type="stmt"/>
-          <line num="12" count="0" type="stmt"/>
-          <line num="13" count="0" type="stmt"/>
-          <line num="14" count="0" type="stmt"/>
-          <line num="15" count="0" type="stmt"/>
-          <line num="16" count="0" type="cond" truecount="0" falsecount="2"/>
-          <line num="17" count="0" type="stmt"/>
-          <line num="20" count="0" type="stmt"/>
-          <line num="26" count="0" type="stmt"/>
-          <line num="31" count="0" type="stmt"/>
-          <line num="32" count="0" type="stmt"/>
-          <line num="36" count="0" type="stmt"/>
-          <line num="40" count="0" type="stmt"/>
+          <metrics statements="22" coveredstatements="22" conditionals="4" coveredconditionals="4" methods="12" coveredmethods="12"/>
+          <line num="1" count="6" type="stmt"/>
+          <line num="2" count="6" type="stmt"/>
+          <line num="4" count="6" type="stmt"/>
+          <line num="5" count="2" type="stmt"/>
+          <line num="6" count="2" type="stmt"/>
+          <line num="7" count="2" type="cond" truecount="2" falsecount="0"/>
+          <line num="8" count="1" type="stmt"/>
+          <line num="9" count="1" type="stmt"/>
+          <line num="10" count="1" type="stmt"/>
+          <line num="11" count="1" type="stmt"/>
+          <line num="12" count="12" type="stmt"/>
+          <line num="13" count="12" type="stmt"/>
+          <line num="14" count="12" type="stmt"/>
+          <line num="15" count="12" type="stmt"/>
+          <line num="16" count="72" type="cond" truecount="2" falsecount="0"/>
+          <line num="17" count="48" type="stmt"/>
+          <line num="20" count="12" type="stmt"/>
+          <line num="26" count="12" type="stmt"/>
+          <line num="31" count="1" type="stmt"/>
+          <line num="32" count="1" type="stmt"/>
+          <line num="36" count="1" type="stmt"/>
+          <line num="40" count="2" type="stmt"/>
         </file>
         <file name="getTopHandler.js" path="/Users/aakashraju/MDL/Evaluations/evaluation4/backend/src/controllers/getTopHandler.js">
           <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-          <line num="1" count="1" type="stmt"/>
-          <line num="3" count="1" type="stmt"/>
-          <line num="4" count="2" type="stmt"/>
-          <line num="5" count="2" type="stmt"/>
-          <line num="11" count="2" type="stmt"/>
-          <line num="12" count="2" type="stmt"/>
-          <line num="15" count="2" type="stmt"/>
+          <line num="1" count="5" type="stmt"/>
+          <line num="3" count="5" type="stmt"/>
+          <line num="4" count="3" type="stmt"/>
+          <line num="5" count="3" type="stmt"/>
+          <line num="11" count="3" type="stmt"/>
+          <line num="12" count="3" type="stmt"/>
+          <line num="15" count="3" type="stmt"/>
         </file>
         <file name="loginHandler.js" path="/Users/aakashraju/MDL/Evaluations/evaluation4/backend/src/controllers/loginHandler.js">
-          <metrics statements="10" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="5" coveredmethods="0"/>
-          <line num="1" count="1" type="stmt"/>
-          <line num="3" count="1" type="stmt"/>
-          <line num="4" count="0" type="stmt"/>
-          <line num="5" count="0" type="stmt"/>
-          <line num="10" count="0" type="cond" truecount="0" falsecount="2"/>
-          <line num="11" count="0" type="stmt"/>
-          <line num="14" count="0" type="stmt"/>
-          <line num="16" count="0" type="stmt"/>
-          <line num="21" count="0" type="stmt"/>
-          <line num="29" count="0" type="stmt"/>
+          <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5"/>
+          <line num="1" count="5" type="stmt"/>
+          <line num="3" count="5" type="stmt"/>
+          <line num="4" count="4" type="stmt"/>
+          <line num="5" count="4" type="stmt"/>
+          <line num="10" count="4" type="cond" truecount="2" falsecount="0"/>
+          <line num="11" count="2" type="stmt"/>
+          <line num="14" count="2" type="stmt"/>
+          <line num="16" count="2" type="stmt"/>
+          <line num="21" count="2" type="stmt"/>
+          <line num="29" count="4" type="stmt"/>
         </file>
         <file name="saveQuestionResponseHandler.js" path="/Users/aakashraju/MDL/Evaluations/evaluation4/backend/src/controllers/saveQuestionResponseHandler.js">
-          <metrics statements="7" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
-          <line num="1" count="1" type="stmt"/>
-          <line num="3" count="1" type="stmt"/>
-          <line num="4" count="0" type="stmt"/>
-          <line num="5" count="0" type="stmt"/>
-          <line num="11" count="0" type="stmt"/>
-          <line num="16" count="0" type="stmt"/>
-          <line num="20" count="0" type="stmt"/>
+          <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+          <line num="1" count="6" type="stmt"/>
+          <line num="3" count="6" type="stmt"/>
+          <line num="4" count="3" type="stmt"/>
+          <line num="5" count="3" type="stmt"/>
+          <line num="11" count="3" type="stmt"/>
+          <line num="16" count="3" type="stmt"/>
+          <line num="20" count="3" type="stmt"/>
         </file>
       </package>
       <package name="src.routes">
-        <metrics statements="31" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="2"/>
+        <metrics statements="31" coveredstatements="31" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="10"/>
         <file name="calculateScore.js" path="/Users/aakashraju/MDL/Evaluations/evaluation4/backend/src/routes/calculateScore.js">
-          <metrics statements="5" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
-          <line num="1" count="1" type="stmt"/>
-          <line num="3" count="1" type="stmt"/>
-          <line num="7" count="0" type="stmt"/>
-          <line num="8" count="0" type="stmt"/>
-          <line num="9" count="0" type="stmt"/>
-        </file>
-        <file name="getQuestions.js" path="/Users/aakashraju/MDL/Evaluations/evaluation4/backend/src/routes/getQuestions.js">
-          <metrics statements="5" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
-          <line num="1" count="1" type="stmt"/>
-          <line num="3" count="1" type="stmt"/>
-          <line num="7" count="0" type="stmt"/>
-          <line num="8" count="0" type="stmt"/>
-          <line num="9" count="0" type="stmt"/>
-        </file>
-        <file name="getTop.js" path="/Users/aakashraju/MDL/Evaluations/evaluation4/backend/src/routes/getTop.js">
           <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-          <line num="1" count="1" type="stmt"/>
-          <line num="3" count="1" type="stmt"/>
+          <line num="1" count="5" type="stmt"/>
+          <line num="3" count="5" type="stmt"/>
           <line num="7" count="2" type="stmt"/>
           <line num="8" count="2" type="stmt"/>
           <line num="9" count="2" type="stmt"/>
         </file>
+        <file name="getQuestions.js" path="/Users/aakashraju/MDL/Evaluations/evaluation4/backend/src/routes/getQuestions.js">
+          <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+          <line num="1" count="5" type="stmt"/>
+          <line num="3" count="5" type="stmt"/>
+          <line num="7" count="1" type="stmt"/>
+          <line num="8" count="1" type="stmt"/>
+          <line num="9" count="1" type="stmt"/>
+        </file>
+        <file name="getTop.js" path="/Users/aakashraju/MDL/Evaluations/evaluation4/backend/src/routes/getTop.js">
+          <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+          <line num="1" count="5" type="stmt"/>
+          <line num="3" count="5" type="stmt"/>
+          <line num="7" count="3" type="stmt"/>
+          <line num="8" count="3" type="stmt"/>
+          <line num="9" count="3" type="stmt"/>
+        </file>
         <file name="index.js" path="/Users/aakashraju/MDL/Evaluations/evaluation4/backend/src/routes/index.js">
           <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="1" count="1" type="stmt"/>
-          <line num="2" count="1" type="stmt"/>
-          <line num="3" count="1" type="stmt"/>
-          <line num="4" count="1" type="stmt"/>
-          <line num="5" count="1" type="stmt"/>
-          <line num="7" count="1" type="stmt"/>
+          <line num="1" count="5" type="stmt"/>
+          <line num="2" count="5" type="stmt"/>
+          <line num="3" count="5" type="stmt"/>
+          <line num="4" count="5" type="stmt"/>
+          <line num="5" count="5" type="stmt"/>
+          <line num="7" count="5" type="stmt"/>
         </file>
         <file name="login.js" path="/Users/aakashraju/MDL/Evaluations/evaluation4/backend/src/routes/login.js">
-          <metrics statements="5" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
-          <line num="1" count="1" type="stmt"/>
-          <line num="3" count="1" type="stmt"/>
-          <line num="7" count="0" type="stmt"/>
-          <line num="8" count="0" type="stmt"/>
-          <line num="9" count="0" type="stmt"/>
+          <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+          <line num="1" count="5" type="stmt"/>
+          <line num="3" count="5" type="stmt"/>
+          <line num="7" count="4" type="stmt"/>
+          <line num="8" count="4" type="stmt"/>
+          <line num="9" count="4" type="stmt"/>
         </file>
         <file name="saveQuestionResponse.js" path="/Users/aakashraju/MDL/Evaluations/evaluation4/backend/src/routes/saveQuestionResponse.js">
-          <metrics statements="5" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
-          <line num="1" count="1" type="stmt"/>
-          <line num="3" count="1" type="stmt"/>
-          <line num="7" count="0" type="stmt"/>
-          <line num="11" count="0" type="stmt"/>
-          <line num="12" count="0" type="stmt"/>
+          <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+          <line num="1" count="5" type="stmt"/>
+          <line num="3" count="5" type="stmt"/>
+          <line num="7" count="2" type="stmt"/>
+          <line num="11" count="2" type="stmt"/>
+          <line num="12" count="2" type="stmt"/>
         </file>
       </package>
     </metrics>
