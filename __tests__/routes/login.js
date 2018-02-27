@@ -66,4 +66,19 @@ describe('Testing login route', () => {
       done();
     });
   });
+
+  it('Login with existing user, Expected output to have score', (done) => {
+    const options = {
+      method: 'POST',
+      url: '/login',
+      payload: {
+        username: 'aakash',
+      },
+    };
+    server.inject(options, (response) => {
+      console.log('Response is: ', response.payload);
+      expect(response.payload.toString()).toContain('score');
+      done();
+    });
+  });
 });

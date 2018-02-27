@@ -18,7 +18,10 @@ module.exports = (uname) => {
             username: uname,
           },
         }).then((quizResponse) => {
-          resolve(quizResponse);
+          resolve({
+            score: data.dataValues.score,
+            prevResponse: quizResponse,
+          });
         });
       }
     });
