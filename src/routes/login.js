@@ -6,7 +6,7 @@ module.exports = {
   handler: (request, reply) => {
     const replyPromise = loginHandler(request.payload.username);
     replyPromise.then((data) => {
-      reply(data);
+      reply(JSON.stringify(data));
     });
   },
 };

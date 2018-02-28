@@ -11,7 +11,12 @@ module.exports = (uname) => {
         Models.users.create({
           username: uname,
           score: 0,
-        }).then(() => { resolve('Created new user'); });
+        }).then(() => {
+          resolve({
+            score: 0,
+            prevResponse: [],
+          });
+        });
       } else {
         Models.responses.findAll({
           where: {
